@@ -1,53 +1,22 @@
-// Which Face Is Which
-// Daniel Shiffman
-// April 25, 2011
-// http://www.shiffman.net
-
 class Face {
 
   // A Rectangle
   Rectangle r, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10;
 
-  // Am I available to be matched?
   boolean available;
-
-  // Should I be deleted?
   boolean delete;
-
-  // How long should I live if I have disappeared?
   int timer = 20;
-  // Assign a number to each face
   int id;
-  boolean detected;
-  // Make me
+  
   Face(int x, int y, int w, int h) {
 
     r = new Rectangle(x, y, w, h);
-    /*   r1=new Rectangle(x,y,w,h);
-     r2=new Rectangle(x,y,w,h);
-     r3=new Rectangle(x,y,w,h);
-     r4=new Rectangle(x,y,w,h);
-     r5=new Rectangle(x,y,w,h);
-     r6=new Rectangle(x,y,w,h);
-     r7=new Rectangle(x,y,w,h);
-     r8=new Rectangle(x,y,w,h);
-     r9=new Rectangle(x,y,w,h);
-     r10=new Rectangle(x,y,w,h); */
 
     available = true;
     delete = false;
     id = faceCount;
     faceCount++;
   }
-
-  // Show me
-  /*void display() {
-   fill(0,0,255,timer);
-   stroke(0,0,255);
-   rect(r.x*scl,r.y*scl,r.width*scl, r.height*scl);
-   fill(255,timer*2);
-   text(""+id,r.x*scl+10,r.y*scl+30);
-   */
   void display() {
 
     if (id==0) {
@@ -149,12 +118,6 @@ class Face {
       }
     }
   }
-
-
-
-
-
-
   // Give me a new location / size
   // Oooh, it would be nice to lerp here!
   void update(Rectangle newR) {
