@@ -115,9 +115,6 @@ class Face {
   // Count me down, I am gone
   void countDown() {
     timer--;
-    //fill(255, 0, 0);
-    //textSize(24);
-    //text("timer : " + timer, 10, 80);
   }
 
   // I am deed, delete me
