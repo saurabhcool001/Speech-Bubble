@@ -80,16 +80,6 @@ class Face {
     if (id==17) {
       s18.display18(width-(r.x*scl+80), r.y*scl-270);
     }
-    /*  if(id==18){
-     s19.display19(r.x*scl+100,r.y*scl-250);
-     }
-     if(id==19){
-     s20.display20(r.x*scl+100,r.y*scl-250);
-     }
-     if(id==20){
-     s21.display21(r.x*scl+100,r.y*scl-250);
-     }
-     */
 
     if (id==9) {
       if (faceCount>=9) {
@@ -112,9 +102,7 @@ class Face {
         s16.update16(r.x*scl, r.y*scl);
         s17.update17(r.x*scl, r.y*scl);
         s18.update18(r.x*scl, r.y*scl);
-        /*s19.update19(r.x*scl,r.y*scl);
-         s20.update20(r.x*scl,r.y*scl);
-         s21.update21(r.x*scl,r.y*scl);  */
+ 
       }
     }
   }
