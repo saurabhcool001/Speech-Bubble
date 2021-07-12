@@ -34,10 +34,6 @@ class sen1{
     
     anchor=physics.makeParticle(1.0,width/2,-10,0);
 
-    //pe.velocity().set(0,-10000,-90000);
-    //anchor.velocity().set(0,-10000,-90000);
-   // p.velocity().set(0,-10000,-90000);
-   
    pe.velocity().add(0,-9000,-95000);
     
     se=physics.makeSpring(pe,anchor,2,0.1,30);
